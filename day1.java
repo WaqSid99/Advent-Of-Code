@@ -8,8 +8,6 @@ class day1 {
         int total2 = 0;
         int total3 = 0;
         
-        ArrayList<Integer> arr =new ArrayList<>();
-
         try {
             File file = new File("day1.txt");
             Scanner sc = new Scanner(file);
@@ -22,7 +20,6 @@ class day1 {
                     temp+=num;
                 }
                 else{
-                    arr.add(temp);
 
                     if(temp>total1){
                         total3= total2;
@@ -53,11 +50,7 @@ class day1 {
         System.out.println(total2);
         System.out.println(total3);
         System.out.println(total1+total3+total2);
-        System.out.println();
-        arr.sort(null);
-        for(int i=0;i<arr.size();i++){
-            System.out.println(arr.get(i));
-        }
+
 
     }
 }
